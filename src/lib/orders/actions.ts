@@ -104,9 +104,14 @@ export async function submitOrder(
       return { ok: false, error: `errorSubmit${detail}` };
     }
 
+    // pizza_id is a UUID FK in the DB, but the static menu uses string slugs
+    // (e.g. "margherita"). Only forward real UUIDs; otherwise NULL, and rely
+    // on pizza_name to preserve what was ordered.
+    const UUID_RE =
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
     const itemRows = input.items.map((i) => ({
       order_id: order.id,
-      pizza_id: i.pizza_id ?? null,
+      pizza_id: i.pizza_id && UUID_RE.test(i.pizza_id) ? i.pizza_id : null,
       pizza_name: i.pizza_name,
       unit_price_mad: i.unit_price,
       quantity: i.quantity,

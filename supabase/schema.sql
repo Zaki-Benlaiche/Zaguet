@@ -205,9 +205,15 @@ create policy "admin_profiles_self_read" on public.admin_profiles
 
 -- ============================================================
 -- REALTIME (admin dashboard notifications)
+-- Idempotent : ignore si déjà ajouté (erreur 42710).
 -- ============================================================
-alter publication supabase_realtime add table public.orders;
-alter publication supabase_realtime add table public.order_items;
+do $$ begin
+  alter publication supabase_realtime add table public.orders;
+exception when duplicate_object then null; end $$;
+
+do $$ begin
+  alter publication supabase_realtime add table public.order_items;
+exception when duplicate_object then null; end $$;
 
 -- ============================================================
 -- SEED DATA — Zaguette family menu (cuisine italienne, prix DZD)
