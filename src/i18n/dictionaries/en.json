@@ -1,8 +1,8 @@
 {
   "brand": {
-    "name": "Zaguet",
-    "tagline": "Wood-fired Pizza",
-    "shortDesc": "Authentic flavor on embers"
+    "name": "Zaguette family",
+    "tagline": "Wood-fired Italian Pizza",
+    "shortDesc": "Authentic Italian pizza fired on embers, in Annaba."
   },
   "nav": {
     "home": "Home",
@@ -13,15 +13,15 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "Crafted with passion,",
-    "heroTitleAccent": "baked to perfection",
-    "heroSubtitle": "Experience the authentic taste of Moroccan wood-fired pizza, made with premium local ingredients.",
+    "heroTitle": "Real Italian pizza,",
+    "heroTitleAccent": "fired on embers",
+    "heroSubtitle": "48-hour fermented dough, traditional wood-fired oven, carefully selected ingredients. The authentic taste of Italy, right in the heart of Annaba.",
     "ctaOrder": "Order Now",
     "ctaStory": "Our Story",
     "popularTitle": "Popular Choices",
     "viewMenu": "View Full Menu",
     "aboutTitle": "Why choose",
-    "aboutText": "At Zaguet, every pizza is a work of art. Our traditional wood-fired oven reaches 400°C to deliver a perfectly crisp yet tender crust. We source our ingredients from the best Moroccan producers, and our dough ferments for 48 hours to develop its full character.",
+    "aboutText": "At Zaguette family, pizza is a family affair. We work with traditional Italian recipes: long-fermented dough, a wood-fired oven that reaches 400°C, hand-picked mozzarella and tomatoes. A thin crust, lightly charred by the embers, and generous toppings — that's the Zaguette spirit.",
     "stat1Value": "48h",
     "stat1Label": "Dough fermentation",
     "stat2Value": "400°C",
@@ -32,14 +32,14 @@
   "menu": {
     "title": "Our",
     "titleAccent": "Menu",
-    "subtitle": "Crafted with the finest ingredients",
+    "subtitle": "Italian tradition, fired on the embers of Annaba",
     "category": {
       "classic": "Classic",
-      "signature": "Zaguet Signature",
+      "signature": "Zaguette Signature",
       "vegetarian": "Vegetarian"
     },
     "add": "Add",
-    "currency": "MAD"
+    "currency": "DZD"
   },
   "cart": {
     "title": "Your Cart",
@@ -71,9 +71,9 @@
     "yourOrder": "Your Order",
     "yourInfo": "Your Details",
     "name": "Full name",
-    "namePlaceholder": "Mohamed Alami",
+    "namePlaceholder": "Mohamed Belkacem",
     "phone": "Phone",
-    "phonePlaceholder": "+212 6 00 00 00 00",
+    "phonePlaceholder": "+213 6 00 00 00 00",
     "email": "Email (optional)",
     "emailPlaceholder": "you@email.com",
     "deliveryType": "Service type",
@@ -106,13 +106,13 @@
     "errorSubmit": "An error occurred. Please try again or contact us."
   },
   "footer": {
-    "description": "Authentic Moroccan wood-fired pizza.",
+    "description": "Wood-fired Italian pizza, in Aïn Achir, Annaba.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "hours": "Hours",
     "follow": "Follow us",
     "rights": "All rights reserved.",
-    "openDaily": "Daily: 12:00 - 23:30"
+    "openDaily": "Daily: 11:30 - 23:30"
   },
   "common": {
     "loading": "Loading…",

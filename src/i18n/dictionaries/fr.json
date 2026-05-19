@@ -1,8 +1,8 @@
 {
   "brand": {
-    "name": "Zaguet",
-    "tagline": "Pizza au feu de bois",
-    "shortDesc": "L'authentique saveur sur braise"
+    "name": "Zaguette family",
+    "tagline": "Pizza italienne au feu de bois",
+    "shortDesc": "L'authentique pizza italienne cuite sur braises, à Annaba."
   },
   "nav": {
     "home": "Accueil",
@@ -13,15 +13,15 @@
     "language": "Langue"
   },
   "home": {
-    "heroTitle": "Cuite avec passion,",
-    "heroTitleAccent": "à la perfection",
-    "heroSubtitle": "Découvrez l'authentique saveur de la pizza marocaine cuite au feu de bois, préparée avec des ingrédients locaux de qualité.",
+    "heroTitle": "La vraie pizza italienne,",
+    "heroTitleAccent": "cuite sur braises",
+    "heroSubtitle": "Pâte fermentée 48h, four à bois traditionnel, ingrédients sélectionnés. Le goût authentique de l'Italie, en plein cœur d'Annaba.",
     "ctaOrder": "Commander",
     "ctaStory": "Notre histoire",
     "popularTitle": "Choix populaires",
     "viewMenu": "Voir tout le menu",
     "aboutTitle": "Pourquoi choisir",
-    "aboutText": "Chez Zaguet, chaque pizza est une œuvre d'art. Notre four à bois traditionnel atteint 400°C pour vous offrir une croûte parfaitement croustillante et fondante à la fois. Nous sélectionnons nos ingrédients chez les meilleurs producteurs marocains, et notre pâte fermente 48h pour révéler tous ses arômes.",
+    "aboutText": "Chez Zaguette family, la pizza est une affaire de famille. Nous travaillons avec les recettes traditionnelles italiennes : pâte longue fermentation, four à bois qui atteint 400°C, mozzarella et tomates choisies avec soin. Une croûte fine, légèrement brûlée par les braises, et des garnitures généreuses — c'est ça, l'esprit Zaguette.",
     "stat1Value": "48h",
     "stat1Label": "Fermentation de la pâte",
     "stat2Value": "400°C",
@@ -32,14 +32,14 @@
   "menu": {
     "title": "Notre",
     "titleAccent": "Menu",
-    "subtitle": "Préparées avec les meilleurs ingrédients",
+    "subtitle": "La tradition italienne, cuite sur les braises d'Annaba",
     "category": {
       "classic": "Classique",
-      "signature": "Signature Zaguet",
+      "signature": "Signature Zaguette",
       "vegetarian": "Végétarienne"
     },
     "add": "Ajouter",
-    "currency": "MAD"
+    "currency": "DA"
   },
   "cart": {
     "title": "Votre panier",
@@ -71,9 +71,9 @@
     "yourOrder": "Votre commande",
     "yourInfo": "Vos coordonnées",
     "name": "Nom complet",
-    "namePlaceholder": "Mohamed Alami",
+    "namePlaceholder": "Mohamed Belkacem",
     "phone": "Téléphone",
-    "phonePlaceholder": "+212 6 00 00 00 00",
+    "phonePlaceholder": "+213 6 00 00 00 00",
     "email": "Email (optionnel)",
     "emailPlaceholder": "vous@email.com",
     "deliveryType": "Type de service",
@@ -106,13 +106,13 @@
     "errorSubmit": "Une erreur est survenue. Réessayez ou contactez-nous."
   },
   "footer": {
-    "description": "L'authentique pizza marocaine cuite au feu de bois.",
+    "description": "Pizza italienne au feu de bois, à Aïn Achir, Annaba.",
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "hours": "Horaires",
     "follow": "Suivez-nous",
     "rights": "Tous droits réservés.",
-    "openDaily": "Tous les jours : 12h00 - 23h30"
+    "openDaily": "Tous les jours : 11h30 - 23h30"
   },
   "common": {
     "loading": "Chargement…",

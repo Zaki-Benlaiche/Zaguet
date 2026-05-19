@@ -13,7 +13,7 @@ import type { DeliveryType, PaymentMethod } from '@/lib/supabase/types';
 import { WhatsAppIcon } from '@/components/icons/Brand';
 import styles from './checkout.module.css';
 
-const DELIVERY_FEE_MAD = 15;
+const DELIVERY_FEE = 200; // DZD
 
 export default function CheckoutForm({
   locale,
@@ -41,7 +41,7 @@ export default function CheckoutForm({
     whatsappUrl?: string;
   } | null>(null);
 
-  const deliveryFee = deliveryType === 'delivery' ? DELIVERY_FEE_MAD : 0;
+  const deliveryFee = deliveryType === 'delivery' ? DELIVERY_FEE : 0;
   const total = totalPrice + deliveryFee;
   const currency = dict.menu.currency;
 
