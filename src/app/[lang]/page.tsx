@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MapPin, Flame } from 'lucide-react';
 import { pizzas } from '@/data/pizzas';
 import PizzaCard from '@/components/PizzaCard';
 import { getDictionary } from '@/i18n/dictionaries';
@@ -19,11 +19,20 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBackground}>
+          <img
+            src="/terrace-sea.png"
+            alt=""
+            className={styles.heroBgImage}
+            aria-hidden="true"
+          />
           <div className={styles.overlay}></div>
         </div>
 
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroText}>
+            <div className={styles.heroBadge}>
+              <MapPin size={14} /> Aïn Achir · Annaba
+            </div>
             <h1 className="animate-fade-in">
               {dict.home.heroTitle}
               <br />
@@ -44,7 +53,7 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
 
           <div className={styles.heroImageContainer}>
             <img
-              src="/pizza-item.png"
+              src="/pizza-duo.png"
               alt={dict.brand.name}
               className={`${styles.heroPizza} animate-float`}
             />
@@ -68,31 +77,85 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </div>
       </section>
 
+      {/* Ambiance Section — NEW */}
+      <section className={`container ${styles.ambianceSection}`}>
+        <div className={styles.ambianceHeader}>
+          <h2>
+            <Flame size={28} className={styles.flameIcon} />{' '}
+            {dict.home.ambianceTitle}
+          </h2>
+          <p>{dict.home.ambianceSubtitle}</p>
+        </div>
+
+        <div className={styles.ambianceGrid}>
+          <figure className={`${styles.ambianceTile} ${styles.tileLarge}`}>
+            <img src="/terrace-sea.png" alt={dict.home.ambianceSeaCaption} />
+            <figcaption>{dict.home.ambianceSeaCaption}</figcaption>
+          </figure>
+          <figure className={styles.ambianceTile}>
+            <img
+              src="/restaurant-sign.png"
+              alt={dict.home.ambianceOvenCaption}
+            />
+            <figcaption>{dict.home.ambianceOvenCaption}</figcaption>
+          </figure>
+          <figure className={styles.ambianceTile}>
+            <img
+              src="/terrace-evening.png"
+              alt={dict.home.ambianceEveningCaption}
+            />
+            <figcaption>{dict.home.ambianceEveningCaption}</figcaption>
+          </figure>
+          <figure className={styles.ambianceTile}>
+            <img
+              src="/pizzas-table.png"
+              alt={dict.home.ambianceFoodCaption}
+            />
+            <figcaption>{dict.home.ambianceFoodCaption}</figcaption>
+          </figure>
+        </div>
+
+        <div className={styles.ambianceFooter}>
+          <Link href={`/${lang}/gallery`} className="btn btn-outline">
+            {dict.home.viewGallery} <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
       {/* About Section */}
       <section
         id="about"
         className={`container ${styles.aboutSection} glass-panel`}
       >
-        <div className={styles.aboutContent}>
-          <h2>
-            {dict.home.aboutTitle}{' '}
-            <span className="text-gradient">{dict.brand.name}</span>
-            {' ?'}
-          </h2>
-          <p>{dict.home.aboutText}</p>
-          <div className={styles.statsRow}>
-            <div className={styles.statBox}>
-              <h3>{dict.home.stat1Value}</h3>
-              <span>{dict.home.stat1Label}</span>
+        <div className={styles.aboutGrid}>
+          <div className={styles.aboutContent}>
+            <h2>
+              {dict.home.aboutTitle}{' '}
+              <span className="text-gradient">{dict.brand.name}</span>
+              {' ?'}
+            </h2>
+            <p>{dict.home.aboutText}</p>
+            <div className={styles.statsRow}>
+              <div className={styles.statBox}>
+                <h3>{dict.home.stat1Value}</h3>
+                <span>{dict.home.stat1Label}</span>
+              </div>
+              <div className={styles.statBox}>
+                <h3>{dict.home.stat2Value}</h3>
+                <span>{dict.home.stat2Label}</span>
+              </div>
+              <div className={styles.statBox}>
+                <h3>{dict.home.stat3Value}</h3>
+                <span>{dict.home.stat3Label}</span>
+              </div>
             </div>
-            <div className={styles.statBox}>
-              <h3>{dict.home.stat2Value}</h3>
-              <span>{dict.home.stat2Label}</span>
-            </div>
-            <div className={styles.statBox}>
-              <h3>{dict.home.stat3Value}</h3>
-              <span>{dict.home.stat3Label}</span>
-            </div>
+          </div>
+          <div className={styles.aboutImageWrap}>
+            <img
+              src="/restaurant-sign.png"
+              alt={dict.brand.name}
+              className={styles.aboutImage}
+            />
           </div>
         </div>
       </section>

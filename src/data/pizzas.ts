@@ -34,7 +34,7 @@ export const pizzas: PizzaData[] = [
   {
     id: 'margherita',
     category: 'classic',
-    image: '/pizza-item.png',
+    image: '/pizza-duo.png',
     price: 700,
     name: { fr: 'Margherita', ar: 'مارغريتا', en: 'Margherita' },
     description: {
@@ -46,7 +46,7 @@ export const pizzas: PizzaData[] = [
   {
     id: 'pepperoni',
     category: 'classic',
-    image: '/pizza-item.png',
+    image: '/pizzas-table.png',
     price: 950,
     name: { fr: 'Pepperoni', ar: 'بيبروني', en: 'Pepperoni' },
     description: {
@@ -84,7 +84,7 @@ export const pizzas: PizzaData[] = [
   {
     id: 'zaguette-speciale',
     category: 'signature',
-    image: '/pizza-item.png',
+    image: '/pizza-duo.png',
     price: 1300,
     name: { fr: 'Zaguette Spéciale', ar: 'Zaguette الخاصة', en: 'Zaguette Special' },
     description: {

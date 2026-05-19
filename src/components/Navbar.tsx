@@ -42,6 +42,9 @@ export default function Navbar() {
             <Link href={`/${locale}/menu`} onClick={close}>
               {dict.nav.menu}
             </Link>
+            <Link href={`/${locale}/gallery`} onClick={close}>
+              {dict.nav.gallery}
+            </Link>
             <Link href={`/${locale}#about`} onClick={close}>
               {dict.nav.about}
             </Link>

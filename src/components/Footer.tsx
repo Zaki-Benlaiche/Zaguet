@@ -55,6 +55,9 @@ export default async function Footer({ locale }: { locale: Locale }) {
               <Link href={`/${locale}/menu`}>{dict.nav.menu}</Link>
             </li>
             <li>
+              <Link href={`/${locale}/gallery`}>{dict.nav.gallery}</Link>
+            </li>
+            <li>
               <Link href={`/${locale}#about`}>{dict.nav.about}</Link>
             </li>
             <li>

@@ -1,12 +1,13 @@
 {
   "brand": {
     "name": "Zaguette family",
-    "tagline": "Pizza & cuisine italienne au feu de bois",
-    "shortDesc": "Pizza, pasta, antipasti — toute la cuisine italienne, à Annaba."
+    "tagline": "Pizza & cuisine italienne au feu de bois, vue mer",
+    "shortDesc": "Pizza au feu de bois face à la Méditerranée, à Annaba."
   },
   "nav": {
     "home": "Accueil",
     "menu": "Menu",
+    "gallery": "Galerie",
     "about": "À propos",
     "contact": "Contact",
     "openCart": "Ouvrir le panier",
@@ -14,14 +15,21 @@
   },
   "home": {
     "heroTitle": "La vraie cuisine italienne,",
-    "heroTitleAccent": "cuite sur braises",
-    "heroSubtitle": "Pizza au feu de bois, pasta fraîches, antipasti, desserts maison. Toute la tradition italienne, en plein cœur d'Annaba.",
+    "heroTitleAccent": "vue mer",
+    "heroSubtitle": "Pizza au feu de bois, pasta fraîches, antipasti, desserts maison — à savourer face à la Méditerranée, sur notre terrasse à Aïn Achir.",
     "ctaOrder": "Commander",
     "ctaStory": "Notre histoire",
     "popularTitle": "Choix populaires",
     "viewMenu": "Voir tout le menu",
+    "ambianceTitle": "L'ambiance",
+    "ambianceSubtitle": "Une terrasse face à la mer, un vrai four à bois, et l'esprit italien.",
+    "ambianceSeaCaption": "Terrasse vue mer",
+    "ambianceOvenCaption": "Notre four à bois",
+    "ambianceEveningCaption": "Coucher de soleil sur la Méditerranée",
+    "ambianceFoodCaption": "Pizzas servies en terrasse",
+    "viewGallery": "Voir la galerie",
     "aboutTitle": "Pourquoi choisir",
-    "aboutText": "Chez Zaguette family, l'Italie est une affaire de famille. Pizza au feu de bois avec pâte fermentée 48h, pasta fraîches préparées chaque jour, antipasti et desserts faits maison. Notre four à bois atteint 400°C pour cette croûte fine et croustillante, et nous sélectionnons nos ingrédients chez les meilleurs producteurs. La vraie cuisine italienne, généreuse, comme à la maison.",
+    "aboutText": "Chez Zaguette family, l'Italie rencontre la Méditerranée. Notre terrasse à Aïn Achir donne directement sur la mer, et notre four à bois traditionnel atteint 400°C pour cette croûte fine, légèrement charbonnée, qu'on ne trouve qu'en Italie. Pâte fermentée 48h, pasta fraîches du jour, antipasti et desserts faits maison. La vraie cuisine italienne, généreuse, à savourer face au coucher de soleil.",
     "stat1Value": "48h",
     "stat1Label": "Fermentation de la pâte",
     "stat2Value": "400°C",
@@ -57,6 +65,17 @@
     "messageGreeting": "Bonjour ! Je souhaite passer une commande :",
     "messageTotal": "Total",
     "messageEnd": "Pouvez-vous me confirmer le délai de livraison ? Merci !"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Plongez dans l'atmosphère de Zaguette family.",
+    "captions": {
+      "terraceSea": "Notre terrasse face à la Méditerranée",
+      "restaurantSign": "L'entrée du restaurant et le four à bois",
+      "terraceEvening": "Coucher de soleil depuis la terrasse",
+      "pizzaDuo": "Deux pizzas sortant du four à bois",
+      "pizzasTable": "Le festin italien servi en terrasse"
+    }
   },
   "contact": {
     "title": "Contact",

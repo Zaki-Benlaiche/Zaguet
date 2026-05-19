@@ -1,12 +1,13 @@
 {
   "brand": {
     "name": "Zaguette family",
-    "tagline": "Wood-fired Pizza & Italian Cuisine",
-    "shortDesc": "Pizza, pasta, antipasti — the full Italian table, in Annaba."
+    "tagline": "Wood-fired Pizza & Italian Cuisine, Sea View",
+    "shortDesc": "Wood-fired pizza overlooking the Mediterranean, in Annaba."
   },
   "nav": {
     "home": "Home",
     "menu": "Menu",
+    "gallery": "Gallery",
     "about": "About",
     "contact": "Contact",
     "openCart": "Open cart",
@@ -14,14 +15,21 @@
   },
   "home": {
     "heroTitle": "Real Italian cuisine,",
-    "heroTitleAccent": "fired on embers",
-    "heroSubtitle": "Wood-fired pizza, fresh pasta, antipasti, homemade desserts. The whole Italian tradition, right in the heart of Annaba.",
+    "heroTitleAccent": "sea view",
+    "heroSubtitle": "Wood-fired pizza, fresh pasta, antipasti, homemade desserts — savored on our terrace facing the Mediterranean, in Aïn Achir.",
     "ctaOrder": "Order Now",
     "ctaStory": "Our Story",
     "popularTitle": "Popular Choices",
     "viewMenu": "View Full Menu",
+    "ambianceTitle": "The Ambiance",
+    "ambianceSubtitle": "A terrace facing the sea, a real wood-fired oven, and the Italian spirit.",
+    "ambianceSeaCaption": "Sea-view terrace",
+    "ambianceOvenCaption": "Our wood-fired oven",
+    "ambianceEveningCaption": "Sunset over the Mediterranean",
+    "ambianceFoodCaption": "Pizzas served on the terrace",
+    "viewGallery": "View Gallery",
     "aboutTitle": "Why choose",
-    "aboutText": "At Zaguette family, Italy is a family affair. Wood-fired pizza with 48-hour fermented dough, fresh pasta made daily, antipasti and homemade desserts. Our wood oven reaches 400°C for that thin, crispy crust, and we source ingredients from the best producers. Real Italian cuisine, generous, just like home.",
+    "aboutText": "At Zaguette family, Italy meets the Mediterranean. Our terrace in Aïn Achir opens straight onto the sea, and our traditional wood-fired oven reaches 400°C for that thin, slightly charred crust you can only find in Italy. 48-hour fermented dough, fresh pasta made daily, antipasti and homemade desserts. Real Italian cuisine, generous, savored while watching the sunset.",
     "stat1Value": "48h",
     "stat1Label": "Dough fermentation",
     "stat2Value": "400°C",
@@ -57,6 +65,17 @@
     "messageGreeting": "Hello! I would like to place an order:",
     "messageTotal": "Total",
     "messageEnd": "Could you confirm the estimated delivery time? Thanks!"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Step into the atmosphere of Zaguette family.",
+    "captions": {
+      "terraceSea": "Our terrace facing the Mediterranean",
+      "restaurantSign": "Restaurant entrance and wood-fired oven",
+      "terraceEvening": "Sunset from the terrace",
+      "pizzaDuo": "Two pizzas straight from the wood oven",
+      "pizzasTable": "Italian feast served on the terrace"
+    }
   },
   "contact": {
     "title": "Contact",
