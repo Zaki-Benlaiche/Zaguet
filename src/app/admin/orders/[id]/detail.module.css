@@ -1,0 +1,219 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.back:hover {
+  color: var(--color-primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.orderNum {
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+}
+
+.badge {
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status_new { background: rgba(255, 184, 0, 0.18); color: var(--color-accent); }
+.status_confirmed { background: rgba(33, 150, 243, 0.18); color: #64b5f6; }
+.status_preparing { background: rgba(255, 77, 0, 0.18); color: var(--color-primary); }
+.status_on_the_way { background: rgba(156, 39, 176, 0.22); color: #ce93d8; }
+.status_delivered { background: rgba(0, 200, 83, 0.18); color: var(--color-green); }
+.status_cancelled { background: rgba(255, 107, 107, 0.18); color: #ff6b6b; }
+
+.timeline {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-width: 110px;
+}
+
+.step:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.step:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.stepReached {
+  border-color: rgba(0, 200, 83, 0.5);
+  color: var(--color-green);
+}
+
+.stepCurrent {
+  border-color: var(--color-primary);
+  background: rgba(255, 77, 0, 0.12);
+  color: var(--color-primary);
+}
+
+.stepDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.stepCancel {
+  margin-inline-start: auto;
+  border-color: rgba(255, 107, 107, 0.4);
+  color: #ff6b6b;
+}
+
+.stepCancel:hover:not(:disabled) {
+  background: rgba(255, 107, 107, 0.08);
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 1.5rem 1.75rem;
+  border-radius: 16px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-accent);
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.card ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.label {
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+}
+
+.itemsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.itemsTable th {
+  text-align: start;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.itemsTable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.totals {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.totals > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.totalRow {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  color: var(--color-text) !important;
+}
+
+.totalRow dd {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+}

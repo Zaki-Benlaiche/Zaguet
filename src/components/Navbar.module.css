@@ -1,0 +1,134 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: all var(--transition-normal);
+  z-index: var(--z-navbar);
+  background: transparent;
+}
+
+.scrolled {
+  background: var(--color-dark-surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  height: 70px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--color-primary);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navLinks a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.navLinks a:hover {
+  color: var(--color-text);
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  inset-inline-start: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cartBtn {
+  position: relative;
+  color: var(--color-text);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.cartBtn:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  inset-inline-end: -10px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  box-shadow: var(--shadow-neon);
+}
+
+.mobileToggle {
+  display: none;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    position: fixed;
+    top: 0;
+    inset-inline-end: -100%;
+    bottom: 0;
+    width: 260px;
+    background: var(--color-dark-surface);
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 2rem;
+    transition: inset-inline-end var(--transition-normal);
+    box-shadow: -5px 0 30px rgba(0,0,0,0.5);
+    border-inline-start: 1px solid var(--color-border);
+  }
+
+  .navLinks.mobileOpen {
+    inset-inline-end: 0;
+  }
+
+  .mobileToggle {
+    display: block;
+    z-index: calc(var(--z-navbar) + 1);
+  }
+}

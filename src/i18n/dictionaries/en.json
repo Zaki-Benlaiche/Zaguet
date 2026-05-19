@@ -1,0 +1,121 @@
+{
+  "brand": {
+    "name": "Zaguet",
+    "tagline": "Wood-fired Pizza",
+    "shortDesc": "Authentic flavor on embers"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "openCart": "Open cart",
+    "language": "Language"
+  },
+  "home": {
+    "heroTitle": "Crafted with passion,",
+    "heroTitleAccent": "baked to perfection",
+    "heroSubtitle": "Experience the authentic taste of Moroccan wood-fired pizza, made with premium local ingredients.",
+    "ctaOrder": "Order Now",
+    "ctaStory": "Our Story",
+    "popularTitle": "Popular Choices",
+    "viewMenu": "View Full Menu",
+    "aboutTitle": "Why choose",
+    "aboutText": "At Zaguet, every pizza is a work of art. Our traditional wood-fired oven reaches 400°C to deliver a perfectly crisp yet tender crust. We source our ingredients from the best Moroccan producers, and our dough ferments for 48 hours to develop its full character.",
+    "stat1Value": "48h",
+    "stat1Label": "Dough fermentation",
+    "stat2Value": "400°C",
+    "stat2Label": "Traditional wood oven",
+    "stat3Value": "100%",
+    "stat3Label": "Fresh ingredients"
+  },
+  "menu": {
+    "title": "Our",
+    "titleAccent": "Menu",
+    "subtitle": "Crafted with the finest ingredients",
+    "category": {
+      "classic": "Classic",
+      "signature": "Zaguet Signature",
+      "vegetarian": "Vegetarian"
+    },
+    "add": "Add",
+    "currency": "MAD"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty.",
+    "browseMenu": "Browse Menu",
+    "total": "Total",
+    "checkout": "Checkout via WhatsApp",
+    "remove": "Remove",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "messageGreeting": "Hello! I would like to place an order:",
+    "messageTotal": "Total",
+    "messageEnd": "Could you confirm the estimated delivery time? Thanks!"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "A question, a reservation? Get in touch.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Hours",
+    "callNow": "Call now",
+    "whatsapp": "WhatsApp",
+    "getDirections": "Get directions"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "subtitle": "One last step before tasting.",
+    "yourOrder": "Your Order",
+    "yourInfo": "Your Details",
+    "name": "Full name",
+    "namePlaceholder": "Mohamed Alami",
+    "phone": "Phone",
+    "phonePlaceholder": "+212 6 00 00 00 00",
+    "email": "Email (optional)",
+    "emailPlaceholder": "you@email.com",
+    "deliveryType": "Service type",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "dineIn": "Dine-in",
+    "address": "Delivery address",
+    "addressPlaceholder": "Street, district, floor…",
+    "notes": "Notes (allergies, instructions…)",
+    "notesPlaceholder": "Optional",
+    "payment": "Payment method",
+    "cash": "Cash on delivery",
+    "cardOnDelivery": "Card on delivery",
+    "online": "Online payment",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery fee",
+    "total": "Total",
+    "submit": "Place order",
+    "submitting": "Sending…",
+    "back": "Back to menu",
+    "alsoSendWhatsapp": "Also send via WhatsApp",
+    "successTitle": "Order received!",
+    "successSubtitle": "We will call you to confirm.",
+    "orderNumber": "Order number",
+    "openWhatsapp": "Confirm on WhatsApp",
+    "newOrder": "New order",
+    "errorEmptyCart": "Your cart is empty.",
+    "errorRequired": "Please fill in all required fields.",
+    "errorPhone": "Invalid phone number.",
+    "errorSubmit": "An error occurred. Please try again or contact us."
+  },
+  "footer": {
+    "description": "Authentic Moroccan wood-fired pizza.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "hours": "Hours",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "openDaily": "Daily: 12:00 - 23:30"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "An error occurred"
+  }
+}

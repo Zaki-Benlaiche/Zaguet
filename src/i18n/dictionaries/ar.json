@@ -1,0 +1,121 @@
+{
+  "brand": {
+    "name": "زاكيت",
+    "tagline": "بيتزا على الجمر",
+    "shortDesc": "النكهة الأصيلة على الجمر"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "menu": "القائمة",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "openCart": "فتح السلة",
+    "language": "اللغة"
+  },
+  "home": {
+    "heroTitle": "مطبوخة بشغف،",
+    "heroTitleAccent": "بإتقان تام",
+    "heroSubtitle": "اكتشف النكهة الأصيلة للبيتزا المغربية المطبوخة على الجمر، محضرة بمكونات محلية عالية الجودة.",
+    "ctaOrder": "اطلب الآن",
+    "ctaStory": "قصتنا",
+    "popularTitle": "الأكثر طلباً",
+    "viewMenu": "عرض القائمة كاملة",
+    "aboutTitle": "لماذا تختار",
+    "aboutText": "في زاكيت، كل بيتزا هي تحفة فنية. فرننا التقليدي على الحطب يصل إلى 400°م ليمنحك قشرة مقرمشة من الخارج وطرية من الداخل. نختار مكوناتنا من أفضل المنتجين المغاربة، وعجينتنا تتخمر 48 ساعة لتكشف عن كل نكهاتها.",
+    "stat1Value": "48 ساعة",
+    "stat1Label": "تخمير العجين",
+    "stat2Value": "400°م",
+    "stat2Label": "فرن تقليدي على الحطب",
+    "stat3Value": "100%",
+    "stat3Label": "مكونات طازجة"
+  },
+  "menu": {
+    "title": "قائمتنا",
+    "titleAccent": "",
+    "subtitle": "محضرة بأجود المكونات",
+    "category": {
+      "classic": "كلاسيكية",
+      "signature": "تخصصات زاكيت",
+      "vegetarian": "نباتية"
+    },
+    "add": "إضافة",
+    "currency": "درهم"
+  },
+  "cart": {
+    "title": "سلتك",
+    "empty": "سلتك فارغة.",
+    "browseMenu": "تصفح القائمة",
+    "total": "المجموع",
+    "checkout": "اطلب عبر واتساب",
+    "remove": "حذف",
+    "increase": "زيادة",
+    "decrease": "نقصان",
+    "messageGreeting": "السلام عليكم! أود تقديم طلب:",
+    "messageTotal": "المجموع",
+    "messageEnd": "هل يمكنكم إخباري بالوقت المتوقع للتوصيل؟ شكراً!"
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "عندك سؤال ولا حجز؟ تواصل معانا.",
+    "addressLabel": "العنوان",
+    "phoneLabel": "الهاتف",
+    "emailLabel": "البريد الإلكتروني",
+    "hoursLabel": "ساعات العمل",
+    "callNow": "اتصل الآن",
+    "whatsapp": "واتساب",
+    "getDirections": "الاتجاهات"
+  },
+  "checkout": {
+    "title": "إتمام الطلب",
+    "subtitle": "خطوة أخيرة قبل التذوق.",
+    "yourOrder": "طلبك",
+    "yourInfo": "معلوماتك",
+    "name": "الاسم الكامل",
+    "namePlaceholder": "محمد العلمي",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "+212 6 00 00 00 00",
+    "email": "البريد الإلكتروني (اختياري)",
+    "emailPlaceholder": "you@email.com",
+    "deliveryType": "نوع الخدمة",
+    "delivery": "توصيل",
+    "pickup": "استلام من المطعم",
+    "dineIn": "في المطعم",
+    "address": "عنوان التوصيل",
+    "addressPlaceholder": "الشارع، الحي، الطابق…",
+    "notes": "ملاحظات (حساسية، تعليمات…)",
+    "notesPlaceholder": "اختياري",
+    "payment": "طريقة الدفع",
+    "cash": "نقداً عند التوصيل",
+    "cardOnDelivery": "بطاقة عند التوصيل",
+    "online": "دفع إلكتروني",
+    "subtotal": "المجموع الفرعي",
+    "deliveryFee": "رسوم التوصيل",
+    "total": "المجموع الكلي",
+    "submit": "تأكيد الطلب",
+    "submitting": "جاري الإرسال…",
+    "back": "العودة للقائمة",
+    "alsoSendWhatsapp": "إرسال أيضاً عبر واتساب",
+    "successTitle": "تم استلام طلبك!",
+    "successSubtitle": "غادي نتصلو بيك باش نأكدو الطلب.",
+    "orderNumber": "رقم الطلب",
+    "openWhatsapp": "تأكيد عبر واتساب",
+    "newOrder": "طلب جديد",
+    "errorEmptyCart": "سلتك فارغة.",
+    "errorRequired": "عمر كاع الخانات المطلوبة عافاك.",
+    "errorPhone": "رقم الهاتف غير صحيح.",
+    "errorSubmit": "وقع خطأ. عاود المحاولة ولا اتصل بينا."
+  },
+  "footer": {
+    "description": "البيتزا المغربية الأصيلة المطبوخة على الجمر.",
+    "quickLinks": "روابط سريعة",
+    "contact": "اتصل بنا",
+    "hours": "ساعات العمل",
+    "follow": "تابعنا",
+    "rights": "جميع الحقوق محفوظة.",
+    "openDaily": "كل الأيام: 12:00 - 23:30"
+  },
+  "common": {
+    "loading": "جاري التحميل…",
+    "error": "حدث خطأ"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "brand": {
+    "name": "Zaguet",
+    "tagline": "Pizza au feu de bois",
+    "shortDesc": "L'authentique saveur sur braise"
+  },
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À propos",
+    "contact": "Contact",
+    "openCart": "Ouvrir le panier",
+    "language": "Langue"
+  },
+  "home": {
+    "heroTitle": "Cuite avec passion,",
+    "heroTitleAccent": "à la perfection",
+    "heroSubtitle": "Découvrez l'authentique saveur de la pizza marocaine cuite au feu de bois, préparée avec des ingrédients locaux de qualité.",
+    "ctaOrder": "Commander",
+    "ctaStory": "Notre histoire",
+    "popularTitle": "Choix populaires",
+    "viewMenu": "Voir tout le menu",
+    "aboutTitle": "Pourquoi choisir",
+    "aboutText": "Chez Zaguet, chaque pizza est une œuvre d'art. Notre four à bois traditionnel atteint 400°C pour vous offrir une croûte parfaitement croustillante et fondante à la fois. Nous sélectionnons nos ingrédients chez les meilleurs producteurs marocains, et notre pâte fermente 48h pour révéler tous ses arômes.",
+    "stat1Value": "48h",
+    "stat1Label": "Fermentation de la pâte",
+    "stat2Value": "400°C",
+    "stat2Label": "Four à bois traditionnel",
+    "stat3Value": "100%",
+    "stat3Label": "Ingrédients frais"
+  },
+  "menu": {
+    "title": "Notre",
+    "titleAccent": "Menu",
+    "subtitle": "Préparées avec les meilleurs ingrédients",
+    "category": {
+      "classic": "Classique",
+      "signature": "Signature Zaguet",
+      "vegetarian": "Végétarienne"
+    },
+    "add": "Ajouter",
+    "currency": "MAD"
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "browseMenu": "Voir le menu",
+    "total": "Total",
+    "checkout": "Commander via WhatsApp",
+    "remove": "Retirer",
+    "increase": "Augmenter",
+    "decrease": "Diminuer",
+    "messageGreeting": "Bonjour ! Je souhaite passer une commande :",
+    "messageTotal": "Total",
+    "messageEnd": "Pouvez-vous me confirmer le délai de livraison ? Merci !"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une question, une réservation ? Contactez-nous.",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "Email",
+    "hoursLabel": "Horaires",
+    "callNow": "Appeler",
+    "whatsapp": "WhatsApp",
+    "getDirections": "Itinéraire"
+  },
+  "checkout": {
+    "title": "Finaliser la commande",
+    "subtitle": "Une dernière étape avant de déguster.",
+    "yourOrder": "Votre commande",
+    "yourInfo": "Vos coordonnées",
+    "name": "Nom complet",
+    "namePlaceholder": "Mohamed Alami",
+    "phone": "Téléphone",
+    "phonePlaceholder": "+212 6 00 00 00 00",
+    "email": "Email (optionnel)",
+    "emailPlaceholder": "vous@email.com",
+    "deliveryType": "Type de service",
+    "delivery": "Livraison",
+    "pickup": "À emporter",
+    "dineIn": "Sur place",
+    "address": "Adresse de livraison",
+    "addressPlaceholder": "Rue, quartier, étage…",
+    "notes": "Notes (allergies, instructions…)",
+    "notesPlaceholder": "Optionnel",
+    "payment": "Mode de paiement",
+    "cash": "Espèces à la livraison",
+    "cardOnDelivery": "Carte à la livraison",
+    "online": "Paiement en ligne",
+    "subtotal": "Sous-total",
+    "deliveryFee": "Frais de livraison",
+    "total": "Total",
+    "submit": "Passer la commande",
+    "submitting": "Envoi…",
+    "back": "Retour au menu",
+    "alsoSendWhatsapp": "Envoyer aussi sur WhatsApp",
+    "successTitle": "Commande reçue !",
+    "successSubtitle": "Nous vous appellerons pour confirmer.",
+    "orderNumber": "Numéro de commande",
+    "openWhatsapp": "Confirmer sur WhatsApp",
+    "newOrder": "Nouvelle commande",
+    "errorEmptyCart": "Votre panier est vide.",
+    "errorRequired": "Veuillez remplir tous les champs obligatoires.",
+    "errorPhone": "Numéro de téléphone invalide.",
+    "errorSubmit": "Une erreur est survenue. Réessayez ou contactez-nous."
+  },
+  "footer": {
+    "description": "L'authentique pizza marocaine cuite au feu de bois.",
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
+    "hours": "Horaires",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés.",
+    "openDaily": "Tous les jours : 12h00 - 23h30"
+  },
+  "common": {
+    "loading": "Chargement…",
+    "error": "Une erreur est survenue"
+  }
+}
