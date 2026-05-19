@@ -1,8 +1,8 @@
 {
   "brand": {
     "name": "Zaguette family",
-    "tagline": "Wood-fired Italian Pizza",
-    "shortDesc": "Authentic Italian pizza fired on embers, in Annaba."
+    "tagline": "Wood-fired Pizza & Italian Cuisine",
+    "shortDesc": "Pizza, pasta, antipasti — the full Italian table, in Annaba."
   },
   "nav": {
     "home": "Home",
@@ -13,15 +13,15 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "Real Italian pizza,",
+    "heroTitle": "Real Italian cuisine,",
     "heroTitleAccent": "fired on embers",
-    "heroSubtitle": "48-hour fermented dough, traditional wood-fired oven, carefully selected ingredients. The authentic taste of Italy, right in the heart of Annaba.",
+    "heroSubtitle": "Wood-fired pizza, fresh pasta, antipasti, homemade desserts. The whole Italian tradition, right in the heart of Annaba.",
     "ctaOrder": "Order Now",
     "ctaStory": "Our Story",
     "popularTitle": "Popular Choices",
     "viewMenu": "View Full Menu",
     "aboutTitle": "Why choose",
-    "aboutText": "At Zaguette family, pizza is a family affair. We work with traditional Italian recipes: long-fermented dough, a wood-fired oven that reaches 400°C, hand-picked mozzarella and tomatoes. A thin crust, lightly charred by the embers, and generous toppings — that's the Zaguette spirit.",
+    "aboutText": "At Zaguette family, Italy is a family affair. Wood-fired pizza with 48-hour fermented dough, fresh pasta made daily, antipasti and homemade desserts. Our wood oven reaches 400°C for that thin, crispy crust, and we source ingredients from the best producers. Real Italian cuisine, generous, just like home.",
     "stat1Value": "48h",
     "stat1Label": "Dough fermentation",
     "stat2Value": "400°C",
@@ -32,11 +32,15 @@
   "menu": {
     "title": "Our",
     "titleAccent": "Menu",
-    "subtitle": "Italian tradition, fired on the embers of Annaba",
+    "subtitle": "Italian tradition, from antipasti to tiramisu",
     "category": {
-      "classic": "Classic",
-      "signature": "Zaguette Signature",
-      "vegetarian": "Vegetarian"
+      "classic": "Classic Pizza",
+      "signature": "Zaguette Signature Pizza",
+      "vegetarian": "Vegetarian Pizza",
+      "pasta": "Pasta",
+      "antipasti": "Antipasti",
+      "dessert": "Desserts",
+      "drink": "Drinks"
     },
     "add": "Add",
     "currency": "DZD"
@@ -106,7 +110,7 @@
     "errorSubmit": "An error occurred. Please try again or contact us."
   },
   "footer": {
-    "description": "Wood-fired Italian pizza, in Aïn Achir, Annaba.",
+    "description": "Wood-fired pizza & Italian cuisine, in Aïn Achir, Annaba.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "hours": "Hours",

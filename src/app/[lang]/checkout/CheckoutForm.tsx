@@ -123,10 +123,15 @@ export default function CheckoutForm({
     setSubmitting(false);
 
     if (!result.ok) {
-      const key = result.error as keyof typeof dict.checkout;
-      const msg =
-        (dict.checkout[key] as string | undefined) ?? dict.checkout.errorSubmit;
-      setError(msg);
+      const raw = result.error ?? 'errorSubmit';
+      // Real key, with optional " (detail)" suffix in dev
+      const [key, ...rest] = raw.split(' ');
+      const suffix = rest.join(' ');
+      const base =
+        (dict.checkout[key as keyof typeof dict.checkout] as
+          | string
+          | undefined) ?? dict.checkout.errorSubmit;
+      setError(suffix ? `${base} ${suffix}` : base);
       return;
     }
 

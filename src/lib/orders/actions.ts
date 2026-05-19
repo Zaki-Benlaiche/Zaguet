@@ -96,7 +96,12 @@ export async function submitOrder(
 
     if (orderError || !order) {
       console.error('[orders] insert failed', orderError);
-      return { ok: false, error: 'errorSubmit' };
+      // Surface the real reason in dev so we can debug ; keep generic in prod.
+      const detail =
+        process.env.NODE_ENV !== 'production' && orderError
+          ? ` (${orderError.message})`
+          : '';
+      return { ok: false, error: `errorSubmit${detail}` };
     }
 
     const itemRows = input.items.map((i) => ({
@@ -116,7 +121,11 @@ export async function submitOrder(
       console.error('[orders] items insert failed', itemsError);
       // Best-effort cleanup
       await supabase.from('orders').delete().eq('id', order.id);
-      return { ok: false, error: 'errorSubmit' };
+      const detail =
+        process.env.NODE_ENV !== 'production'
+          ? ` (${itemsError.message})`
+          : '';
+      return { ok: false, error: `errorSubmit${detail}` };
     }
 
     return {

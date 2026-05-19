@@ -1,11 +1,19 @@
 import { notFound } from 'next/navigation';
-import { pizzas, type PizzaCategory } from '@/data/pizzas';
+import { pizzas, type MenuCategory } from '@/data/pizzas';
 import PizzaCard from '@/components/PizzaCard';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale } from '@/i18n/config';
 import styles from './menu.module.css';
 
-const CATEGORIES: PizzaCategory[] = ['classic', 'signature', 'vegetarian'];
+const CATEGORIES: MenuCategory[] = [
+  'classic',
+  'signature',
+  'vegetarian',
+  'pasta',
+  'antipasti',
+  'dessert',
+  'drink',
+];
 
 export default async function MenuPage({ params }: PageProps<'/[lang]/menu'>) {
   const { lang } = await params;

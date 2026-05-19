@@ -1,8 +1,8 @@
 {
   "brand": {
     "name": "Zaguette family",
-    "tagline": "Pizza italienne au feu de bois",
-    "shortDesc": "L'authentique pizza italienne cuite sur braises, à Annaba."
+    "tagline": "Pizza & cuisine italienne au feu de bois",
+    "shortDesc": "Pizza, pasta, antipasti — toute la cuisine italienne, à Annaba."
   },
   "nav": {
     "home": "Accueil",
@@ -13,15 +13,15 @@
     "language": "Langue"
   },
   "home": {
-    "heroTitle": "La vraie pizza italienne,",
+    "heroTitle": "La vraie cuisine italienne,",
     "heroTitleAccent": "cuite sur braises",
-    "heroSubtitle": "Pâte fermentée 48h, four à bois traditionnel, ingrédients sélectionnés. Le goût authentique de l'Italie, en plein cœur d'Annaba.",
+    "heroSubtitle": "Pizza au feu de bois, pasta fraîches, antipasti, desserts maison. Toute la tradition italienne, en plein cœur d'Annaba.",
     "ctaOrder": "Commander",
     "ctaStory": "Notre histoire",
     "popularTitle": "Choix populaires",
     "viewMenu": "Voir tout le menu",
     "aboutTitle": "Pourquoi choisir",
-    "aboutText": "Chez Zaguette family, la pizza est une affaire de famille. Nous travaillons avec les recettes traditionnelles italiennes : pâte longue fermentation, four à bois qui atteint 400°C, mozzarella et tomates choisies avec soin. Une croûte fine, légèrement brûlée par les braises, et des garnitures généreuses — c'est ça, l'esprit Zaguette.",
+    "aboutText": "Chez Zaguette family, l'Italie est une affaire de famille. Pizza au feu de bois avec pâte fermentée 48h, pasta fraîches préparées chaque jour, antipasti et desserts faits maison. Notre four à bois atteint 400°C pour cette croûte fine et croustillante, et nous sélectionnons nos ingrédients chez les meilleurs producteurs. La vraie cuisine italienne, généreuse, comme à la maison.",
     "stat1Value": "48h",
     "stat1Label": "Fermentation de la pâte",
     "stat2Value": "400°C",
@@ -32,11 +32,15 @@
   "menu": {
     "title": "Notre",
     "titleAccent": "Menu",
-    "subtitle": "La tradition italienne, cuite sur les braises d'Annaba",
+    "subtitle": "La tradition italienne, des antipasti au tiramisu",
     "category": {
-      "classic": "Classique",
-      "signature": "Signature Zaguette",
-      "vegetarian": "Végétarienne"
+      "classic": "Pizza Classique",
+      "signature": "Pizza Signature Zaguette",
+      "vegetarian": "Pizza Végétarienne",
+      "pasta": "Pasta",
+      "antipasti": "Antipasti",
+      "dessert": "Desserts",
+      "drink": "Boissons"
     },
     "add": "Ajouter",
     "currency": "DA"
@@ -106,7 +110,7 @@
     "errorSubmit": "Une erreur est survenue. Réessayez ou contactez-nous."
   },
   "footer": {
-    "description": "Pizza italienne au feu de bois, à Aïn Achir, Annaba.",
+    "description": "Pizza & cuisine italienne au feu de bois, à Aïn Achir, Annaba.",
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "hours": "Horaires",

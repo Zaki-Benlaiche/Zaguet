@@ -210,14 +210,20 @@ alter publication supabase_realtime add table public.orders;
 alter publication supabase_realtime add table public.order_items;
 
 -- ============================================================
--- SEED DATA — Zaguette family menu (pizza italienne, prix DZD)
+-- SEED DATA — Zaguette family menu (cuisine italienne, prix DZD)
 -- Note: la colonne `price_mad` reste nommée ainsi pour des raisons
 -- historiques ; elle stocke en réalité des Dinars Algériens (DA).
+-- La table `pizzas` contient TOUT le menu (pizza, pasta, antipasti,
+-- desserts, boissons).
 -- ============================================================
 insert into public.categories (slug, name_fr, name_ar, name_en, sort_order) values
-  ('classic',     'Classique',             'كلاسيكية',          'Classic',           1),
-  ('signature',   'Signature Zaguette',    'تخصصات Zaguette',    'Zaguette Signature',2),
-  ('vegetarian',  'Végétarienne',          'نباتية',             'Vegetarian',        3)
+  ('classic',     'Pizza Classique',         'بيتزا كلاسيكية',      'Classic Pizza',          1),
+  ('signature',   'Pizza Signature Zaguette','بيتزا تخصصات Zaguette','Zaguette Signature Pizza',2),
+  ('vegetarian',  'Pizza Végétarienne',      'بيتزا نباتية',         'Vegetarian Pizza',       3),
+  ('pasta',       'Pasta',                   'باستا',                'Pasta',                  4),
+  ('antipasti',   'Antipasti',               'مقبلات',               'Antipasti',              5),
+  ('dessert',     'Desserts',                'حلويات',               'Desserts',               6),
+  ('drink',       'Boissons',                'مشروبات',              'Drinks',                 7)
 on conflict (slug) do nothing;
 
 insert into public.pizzas
@@ -284,7 +290,99 @@ select v.* from (values
     'Crème truffée, champignons sauvages, mozzarella, parmesan, persil frais.',
     'كريمة الكمأة، فطر بري، موزاريلا، بارميزان، معدنوس طازج.',
     'Truffle cream, wild mushrooms, mozzarella, parmesan, fresh parsley.',
-    2, false)
+    2, false),
+
+  -- PASTA
+  ('spaghetti-bolognese', (select id from public.categories where slug='pasta'), '/pizza-item.png', 1000.00,
+    'Spaghetti Bolognese', 'سباغيتي بولونيز', 'Spaghetti Bolognese',
+    'Spaghetti al dente, sauce bolognaise mijotée, parmesan râpé, basilic frais.',
+    'سباغيتي مطبوخة، صلصة بولونيز مطهية، بارميزان مبشور، ريحان طازج.',
+    'Spaghetti al dente, slow-cooked bolognese sauce, grated parmesan, fresh basil.',
+    1, false),
+  ('penne-arrabbiata', (select id from public.categories where slug='pasta'), '/pizza-item.png', 900.00,
+    'Penne Arrabbiata', 'بيني أرابياتا', 'Penne Arrabbiata',
+    'Penne, sauce tomate épicée à l''ail et au piment, persil, huile d''olive.',
+    'بيني، صلصة طماطم حارة بالثوم والفلفل، معدنوس، زيت زيتون.',
+    'Penne, spicy garlic-and-chili tomato sauce, parsley, olive oil.',
+    2, false),
+  ('lasagne-al-forno', (select id from public.categories where slug='pasta'), '/pizza-item.png', 1200.00,
+    'Lasagne al Forno', 'لازانيا الفرن', 'Lasagne al Forno',
+    'Lasagne traditionnelle au ragù de bœuf, béchamel, mozzarella, parmesan, cuite au four.',
+    'لازانيا تقليدية بصلصة لحم البقر، بشاميل، موزاريلا، بارميزان، مطبوخة في الفرن.',
+    'Traditional beef ragù lasagne, béchamel, mozzarella, parmesan, oven-baked.',
+    3, false),
+  ('tagliatelle-pesto', (select id from public.categories where slug='pasta'), '/pizza-item.png', 1100.00,
+    'Tagliatelle al Pesto', 'تالياتيلي بالبيستو', 'Tagliatelle al Pesto',
+    'Tagliatelle fraîches, pesto au basilic, pignons de pin, parmesan affiné, huile d''olive.',
+    'تالياتيلي طازجة، بيستو الريحان، بذور الصنوبر، بارميزان معتق، زيت زيتون.',
+    'Fresh tagliatelle, basil pesto, pine nuts, aged parmesan, olive oil.',
+    4, false),
+
+  -- ANTIPASTI
+  ('bruschetta', (select id from public.categories where slug='antipasti'), '/pizza-item.png', 450.00,
+    'Bruschetta al Pomodoro', 'بروسكيتا بالطماطم', 'Bruschetta al Pomodoro',
+    'Pain grillé sur braise, tomates fraîches concassées, ail, basilic, huile d''olive.',
+    'خبز مشوي على الجمر، طماطم طازجة مفرومة، ثوم، ريحان، زيت زيتون.',
+    'Wood-fire-toasted bread, fresh diced tomatoes, garlic, basil, olive oil.',
+    1, false),
+  ('caprese', (select id from public.categories where slug='antipasti'), '/pizza-item.png', 700.00,
+    'Insalata Caprese', 'سلطة كابريزي', 'Insalata Caprese',
+    'Mozzarella di bufala, tomates mûres, basilic frais, huile d''olive extra vierge.',
+    'موزاريلا الجاموس، طماطم ناضجة، ريحان طازج، زيت زيتون بكر ممتاز.',
+    'Buffalo mozzarella, ripe tomatoes, fresh basil, extra virgin olive oil.',
+    2, false),
+  ('carpaccio-boeuf', (select id from public.categories where slug='antipasti'), '/pizza-item.png', 1100.00,
+    'Carpaccio de Bœuf', 'كارباتشيو لحم البقر', 'Beef Carpaccio',
+    'Fines tranches de bœuf cru, roquette, copeaux de parmesan, citron, huile d''olive.',
+    'شرائح رفيعة من لحم البقر النيء، جرجير، رقائق بارميزان، ليمون، زيت زيتون.',
+    'Thin slices of raw beef, arugula, parmesan shavings, lemon, olive oil.',
+    3, false),
+
+  -- DESSERTS
+  ('tiramisu', (select id from public.categories where slug='dessert'), '/pizza-item.png', 500.00,
+    'Tiramisu', 'تيراميسو', 'Tiramisu',
+    'Le classique italien : mascarpone, café espresso, biscuits, cacao en poudre.',
+    'الكلاسيكية الإيطالية: ماسكاربوني، قهوة إسبريسو، بسكويت، كاكاو بودرة.',
+    'The Italian classic: mascarpone, espresso coffee, ladyfingers, cocoa powder.',
+    1, false),
+  ('panna-cotta', (select id from public.categories where slug='dessert'), '/pizza-item.png', 450.00,
+    'Panna Cotta', 'بانا كوتا', 'Panna Cotta',
+    'Crème onctueuse à la vanille, coulis de fruits rouges maison.',
+    'كريمة فانيلا ناعمة، صلصة الفواكه الحمراء البيتية.',
+    'Silky vanilla cream, homemade red-berry coulis.',
+    2, false),
+  ('cheesecake', (select id from public.categories where slug='dessert'), '/pizza-item.png', 500.00,
+    'Cheesecake', 'تشيز كيك', 'Cheesecake',
+    'Base biscuit, crème au fromage, coulis de fraises fraîches.',
+    'قاعدة بسكويت، كريمة الجبن، صلصة الفراولة الطازجة.',
+    'Biscuit base, cream cheese filling, fresh strawberry coulis.',
+    3, false),
+
+  -- BOISSONS
+  ('coca-cola', (select id from public.categories where slug='drink'), '/pizza-item.png', 150.00,
+    'Coca-Cola 33cl', 'كوكا كولا 33سل', 'Coca-Cola 33cl',
+    'Canette 33cl bien fraîche.',
+    'علبة 33سل باردة.',
+    'Ice-cold 33cl can.',
+    1, false),
+  ('eau-minerale', (select id from public.categories where slug='drink'), '/pizza-item.png', 80.00,
+    'Eau minérale 50cl', 'ماء معدني 50سل', 'Mineral water 50cl',
+    'Eau minérale plate ou gazeuse.',
+    'ماء معدني عادي أو غازي.',
+    'Still or sparkling mineral water.',
+    2, false),
+  ('jus-orange', (select id from public.categories where slug='drink'), '/pizza-item.png', 250.00,
+    'Jus d''orange frais', 'عصير برتقال طازج', 'Fresh orange juice',
+    'Pressé minute, 100% oranges fraîches.',
+    'معصور للحظة، 100% برتقال طازج.',
+    'Freshly squeezed, 100% real oranges.',
+    3, false),
+  ('espresso', (select id from public.categories where slug='drink'), '/pizza-item.png', 120.00,
+    'Espresso italien', 'إسبريسو إيطالي', 'Italian espresso',
+    'Café italien authentique, mouture fine, crème dorée.',
+    'قهوة إيطالية أصيلة، طحن ناعم، كريمة ذهبية.',
+    'Authentic Italian coffee, fine grind, golden crema.',
+    4, false)
 ) as v(slug, category_id, image_url, price_mad,
        name_fr, name_ar, name_en,
        description_fr, description_ar, description_en, sort_order, is_featured)
