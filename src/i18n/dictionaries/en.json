@@ -51,7 +51,10 @@
       "drink": "Drinks"
     },
     "add": "Add",
-    "currency": "DZD"
+    "currency": "DZD",
+    "searchPlaceholder": "Search for a dish…",
+    "allCategories": "All",
+    "noResults": "No dish matches your search."
   },
   "cart": {
     "title": "Your Cart",
@@ -65,6 +68,30 @@
     "messageGreeting": "Hello! I would like to place an order:",
     "messageTotal": "Total",
     "messageEnd": "Could you confirm the estimated delivery time? Thanks!"
+  },
+  "testimonials": {
+    "title": "Loved by our guests",
+    "subtitle": "What our customers say",
+    "rating": "4.9",
+    "ratingLabel": "on Google · 200+ reviews",
+    "items": [
+      {
+        "name": "Amine B.",
+        "text": "The best pizza in Annaba, hands down. The dough is light and the sea view from the terrace is stunning."
+      },
+      {
+        "name": "Sara K.",
+        "text": "You can taste the real wood fire. Fresh ingredients, perfect crust. The tiramisu is to die for!"
+      },
+      {
+        "name": "Karim M.",
+        "text": "Fast service and a great terrace for summer evenings. My favorite spot in Aïn Achir."
+      },
+      {
+        "name": "Lina T.",
+        "text": "On-time delivery and the pizza was still hot. The Zaguette Special is incredible."
+      }
+    ]
   },
   "gallery": {
     "title": "Gallery",
@@ -127,6 +154,32 @@
     "errorRequired": "Please fill in all required fields.",
     "errorPhone": "Invalid phone number.",
     "errorSubmit": "An error occurred. Please try again or contact us."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before ordering",
+    "items": [
+      {
+        "q": "Is your food halal?",
+        "a": "Yes, all our meats are 100% halal, certified by our local suppliers."
+      },
+      {
+        "q": "What are your delivery areas?",
+        "a": "We deliver to Aïn Achir and surrounding districts of Annaba. Contact us to confirm your area."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "On average between 30 and 45 minutes depending on your area and how busy we are."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Cash on delivery and card on delivery. Online payment is coming soon."
+      },
+      {
+        "q": "Can I reserve a table on the terrace?",
+        "a": "Yes! Call us or message us on WhatsApp to book, especially for summer evenings."
+      }
+    ]
   },
   "footer": {
     "description": "Wood-fired pizza & Italian cuisine, in Aïn Achir, Annaba.",

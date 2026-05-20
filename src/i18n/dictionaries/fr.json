@@ -51,7 +51,10 @@
       "drink": "Boissons"
     },
     "add": "Ajouter",
-    "currency": "DA"
+    "currency": "DA",
+    "searchPlaceholder": "Rechercher un plat…",
+    "allCategories": "Tout",
+    "noResults": "Aucun plat ne correspond à votre recherche."
   },
   "cart": {
     "title": "Votre panier",
@@ -65,6 +68,30 @@
     "messageGreeting": "Bonjour ! Je souhaite passer une commande :",
     "messageTotal": "Total",
     "messageEnd": "Pouvez-vous me confirmer le délai de livraison ? Merci !"
+  },
+  "testimonials": {
+    "title": "Ils nous ont fait confiance",
+    "subtitle": "Ce que disent nos clients",
+    "rating": "4.9",
+    "ratingLabel": "sur Google · 200+ avis",
+    "items": [
+      {
+        "name": "Amine B.",
+        "text": "La meilleure pizza d'Annaba, sans hésiter. La pâte est légère et la vue sur la mer depuis la terrasse est magnifique."
+      },
+      {
+        "name": "Sara K.",
+        "text": "On sent le vrai feu de bois. Ingrédients frais, croûte parfaite. Le tiramisu est à tomber !"
+      },
+      {
+        "name": "Karim M.",
+        "text": "Service rapide et terrasse au top pour les soirées d'été. Mon endroit préféré à Aïn Achir."
+      },
+      {
+        "name": "Lina T.",
+        "text": "Livraison ponctuelle et pizza encore chaude. La Zaguette Spéciale est incroyable."
+      }
+    ]
   },
   "gallery": {
     "title": "Galerie",
@@ -127,6 +154,32 @@
     "errorRequired": "Veuillez remplir tous les champs obligatoires.",
     "errorPhone": "Numéro de téléphone invalide.",
     "errorSubmit": "Une erreur est survenue. Réessayez ou contactez-nous."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir avant de commander",
+    "items": [
+      {
+        "q": "Est-ce que vos plats sont halal ?",
+        "a": "Oui, toutes nos viandes sont 100% halal, certifiées par nos fournisseurs locaux."
+      },
+      {
+        "q": "Quelles sont les zones de livraison ?",
+        "a": "Nous livrons à Aïn Achir et dans les quartiers environnants d'Annaba. Contactez-nous pour confirmer votre zone."
+      },
+      {
+        "q": "Combien de temps prend la livraison ?",
+        "a": "En moyenne entre 30 et 45 minutes selon votre zone et l'affluence."
+      },
+      {
+        "q": "Quels moyens de paiement acceptez-vous ?",
+        "a": "Espèces à la livraison et carte à la livraison. Le paiement en ligne arrive bientôt."
+      },
+      {
+        "q": "Peut-on réserver une table en terrasse ?",
+        "a": "Oui ! Appelez-nous ou écrivez-nous sur WhatsApp pour réserver, surtout pour les soirées d'été."
+      }
+    ]
   },
   "footer": {
     "description": "Pizza & cuisine italienne au feu de bois, à Aïn Achir, Annaba.",

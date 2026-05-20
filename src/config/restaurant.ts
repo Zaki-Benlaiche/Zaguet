@@ -20,4 +20,12 @@ export const RESTAURANT = {
   },
   mapsEmbedSrc:
     'https://www.google.com/maps?q=Cit%C3%A9+A%C3%AFn+Achir%2C+Annaba%2C+Alg%C3%A9rie&output=embed',
+  geo: { lat: 36.8702, lng: 7.7851 }, // Annaba (approx — replace with exact pin)
+  city: 'Annaba',
+  country: 'DZ',
+  priceRange: '800–1600 DZD',
 } as const;
+
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
+  'https://zaguet.vercel.app';

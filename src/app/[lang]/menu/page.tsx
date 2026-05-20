@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { pizzas, type MenuCategory } from '@/data/pizzas';
-import PizzaCard from '@/components/PizzaCard';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale } from '@/i18n/config';
+import MenuBrowser from './MenuBrowser';
 import styles from './menu.module.css';
 
 const CATEGORIES: MenuCategory[] = [
@@ -14,6 +14,16 @@ const CATEGORIES: MenuCategory[] = [
   'dessert',
   'drink',
 ];
+
+export async function generateMetadata({ params }: PageProps<'/[lang]/menu'>) {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  const dict = await getDictionary(lang);
+  return {
+    title: `${dict.nav.menu}`,
+    description: dict.menu.subtitle,
+  };
+}
 
 export default async function MenuPage({ params }: PageProps<'/[lang]/menu'>) {
   const { lang } = await params;
@@ -33,27 +43,7 @@ export default async function MenuPage({ params }: PageProps<'/[lang]/menu'>) {
         <p>{dict.menu.subtitle}</p>
       </div>
 
-      <div className={styles.categoriesWrapper}>
-        {CATEGORIES.map((category) => {
-          const categoryPizzas = pizzas.filter((p) => p.category === category);
-          if (categoryPizzas.length === 0) return null;
-
-          return (
-            <div key={category} className={styles.categorySection}>
-              <div className={styles.categoryHeader}>
-                <h2>{dict.menu.category[category]}</h2>
-                <div className={styles.divider}></div>
-              </div>
-
-              <div className={styles.pizzaGrid}>
-                {categoryPizzas.map((pizza) => (
-                  <PizzaCard key={pizza.id} pizza={pizza} />
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <MenuBrowser items={pizzas} categories={CATEGORIES} />
     </div>
   );
 }

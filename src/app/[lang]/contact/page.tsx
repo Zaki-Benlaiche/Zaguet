@@ -6,6 +6,15 @@ import { RESTAURANT } from '@/config/restaurant';
 import { WhatsAppIcon } from '@/components/icons/Brand';
 import styles from './contact.module.css';
 
+export async function generateMetadata({
+  params,
+}: PageProps<'/[lang]/contact'>) {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  const dict = await getDictionary(lang);
+  return { title: dict.contact.title, description: dict.contact.subtitle };
+}
+
 export default async function ContactPage({
   params,
 }: PageProps<'/[lang]/contact'>) {

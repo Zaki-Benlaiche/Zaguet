@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { ArrowRight, MapPin, Flame } from 'lucide-react';
 import { pizzas } from '@/data/pizzas';
 import PizzaCard from '@/components/PizzaCard';
+import Testimonials from '@/components/Testimonials';
+import Faq from '@/components/Faq';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale } from '@/i18n/config';
 import styles from './page.module.css';
@@ -122,6 +124,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
         </div>
       </section>
 
+      {/* Testimonials — NEW */}
+      <Testimonials t={dict.testimonials} />
+
       {/* About Section */}
       <section
         id="about"
@@ -159,6 +164,9 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
           </div>
         </div>
       </section>
+
+      {/* FAQ — NEW */}
+      <Faq t={dict.faq} />
     </div>
   );
 }

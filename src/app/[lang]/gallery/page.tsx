@@ -17,6 +17,15 @@ const ITEMS: GalleryItem[] = [
   { src: '/pizzas-table.png', captionKey: 'pizzasTable', size: 'normal' },
 ];
 
+export async function generateMetadata({
+  params,
+}: PageProps<'/[lang]/gallery'>) {
+  const { lang } = await params;
+  if (!isLocale(lang)) return {};
+  const dict = await getDictionary(lang);
+  return { title: dict.gallery.title, description: dict.gallery.subtitle };
+}
+
 export default async function GalleryPage({
   params,
 }: PageProps<'/[lang]/gallery'>) {
